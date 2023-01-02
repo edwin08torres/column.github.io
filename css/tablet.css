@@ -1,0 +1,41 @@
+.main{
+    height: 100%;
+}
+
+.main .article{
+    display: flex;
+    padding: 0 10%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .article .card{
+    display: flex;
+    padding: 5%;
+    justify-content: center;
+    height: 420px;
+    min-width: 230px;
+    max-width: 260px;
+    margin: 10% 0;
+    justify-content: space-evenly;
+}
+
+.main .article .card .btn {
+margin-top: 60px;
+}
+
+.main .article .card:nth-child(1) {
+    background-color: var(--bright-organge);
+    border-radius: 10px 0 0 10px;
+}
+
+.main .article .card:nth-child(2) {
+    background-color: var(--very-dark__cyan);
+}
+
+.main .article .card:nth-child(3) {
+    background-color: var(--dark-cyan);
+    border-radius: 0 10px 10px 0;
+}

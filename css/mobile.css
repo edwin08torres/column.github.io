@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+    /* Colors */
+    /* -------------------- */
+
+    --bright-organge: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark__cyan: hsl(184, 54%, 40%);
+
+    --paragraph: hsla(0, 0%, 100%, 0.75);
+
+    /* background, headings, buttons */
+    --ligth-gray: hsl(0, 0%, 95%);
+
+    /* Typography */
+    /* ------------------------------------- */
+    --lexend-deca: 'Lexend Deca', sans-serif;
+    --Big-Shoulder: 'Big Shoulders Display', cursive;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+.main {
+    background-color: var(--ligth-gray);
+    min-height: 100%;
+}
+
+.main .article {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    justify-content: center;
+    /* border: 2px solid red; */
+    width: 100vw;
+    padding: 10% 0;
+}
+
+.main .article .card {
+    /* border: 2px solid red; */
+    height: 340px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 10%;
+}
+
+.main .article .card .icon img {
+    height: 26px;
+    object-fit: cover;
+}
+
+.main .article .card .descripcion h2 {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: var(--Big-Shoulder);
+    font-weight: bold;
+    letter-spacing: .1rem;
+    color: var(--ligth-gray);
+}
+
+.main .article .card .descripcion p {
+    font-family: var(--lexend-deca);
+    font-size: 15px;
+    font-weight: 400px;
+    color: var(--paragraph);
+}
+
+.main .article .card .btn {
+    /* border: 2px solid red; */
+    width: 120px;
+    min-height: 40px;
+    max-height: 60px;
+    border-radius: 25px;
+    background-color: var(--ligth-gray);
+    color: var(--dark-cyan);
+    border: none;
+}
+
+.main .article .card .btn:hover {
+    background-color: transparent;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.main .article .card:nth-child(1) {
+    background-color: var(--bright-organge);
+    border-radius: 10px 10px 0 0;
+}
+
+.main .article .card:nth-child(2) {
+    background-color: var(--very-dark__cyan);
+}
+
+.main .article .card:nth-child(3) {
+    background-color: var(--dark-cyan);
+    border-radius: 0 0 10px 10px ;
+}

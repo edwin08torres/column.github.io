@@ -1,0 +1,47 @@
+.main {
+    height: 100%;
+    /* border: 2px solid red; */
+}
+
+.main .article {
+    display: flex;
+    margin: 0;
+    padding: 0 10%;
+    display: flex;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    padding: 0 20%;
+}
+
+.main .article .card {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    height: 420px;
+}
+
+.main .article .card .icon{
+    margin-right: 150px;
+}
+
+.main .article .card .icon img{
+    height: 38px;
+    /* border: 2px solid red; */
+}
+
+.main .article .card .descripcion {
+    /* border: 2px solid red; */
+    width: 200px;
+    height: 200px;
+
+    /* margin-top: 40px; */
+}
+
+.main .article .card .btn {
+    margin: 0;
+    margin-right: 80px;
+}
